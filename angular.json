@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hp"
+    }
+  },
+  "defaultProject": "hp",
+  "cli": {
+    "analytics": false
+  }
 }

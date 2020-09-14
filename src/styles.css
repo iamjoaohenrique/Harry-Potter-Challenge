@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+.card {
+    max-height: 25%;
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+    border: 2px solid rgba(0,0,0,1);
+    border-radius: 4rem;
+}
+.card h5 {
+    font-family: harryfont;
+    font-size: 6rem;
+    font-style: normal;
+}
+
+.card p{
+    font-family: roboto;
+    font-size: 1.5rem;
+}
+
+.card img{
+    width: 50%;
+    border: 3px solid rgb(212, 174, 48);
+}
+.topo{
+    background-color: black;
+    padding: 2%;
+}
+.logo{
+    width: 10%;
+    height: 10%;
+
+}
+
+@font-face {
+	font-family: harryfont;
+	src: url(./assets/fontes/hp.TTF);
+}
+@font-face{
+    font-family: roboto;
+    src: url(./assets/fontes/roboto.ttf);
+}
