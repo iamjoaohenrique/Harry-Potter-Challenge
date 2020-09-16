@@ -5,13 +5,9 @@ import { HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiService {
-
   constructor(private http: HttpClient) { }
 
   getAllPersonagens(){
-    return this.http.get(`http://hp-api.herokuapp.com/api/characters/`);
-
-    //return this.http.get(`https://servicodados.ibge.gov.br/api/v2/censos/nomes/`);
-    
+    return this.http.get(`http://hp-api.herokuapp.com/api/characters/`);    
   }
 }
