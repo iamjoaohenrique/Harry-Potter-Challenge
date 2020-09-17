@@ -32,6 +32,19 @@
 
 }
 
+.dropdown-item.active, .dropdown-item:active{
+    background-color: yellow;
+    color: black;
+}
+
+.filtro{
+    margin: 1rem;
+}
+
+.filtro h2{
+    margin-right: 1.8rem;
+}
+
 @font-face {
 	font-family: harryfont;
 	src: url(./assets/fontes/hp.TTF);

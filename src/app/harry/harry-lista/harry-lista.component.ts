@@ -8,23 +8,43 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HarryListaComponent implements OnInit {
 
-  personagens : any = []; 
+  personagens: any = [];
 
-  constructor(private ApiService : ApiService) {
-    this.getAllPersonagens();
-   }
+  house: string = 'todas';
+
+  constructor(private ApiService: ApiService) {
+    this.getOneHouse();
+  }
 
   ngOnInit(): void {
   }
 
-  getAllPersonagens() {
-    this.ApiService.getAllPersonagens().subscribe(
-      (success) => {
-        console.log (success);
-        this.personagens = success;
-      },
-      (error)=> {console.log (error)}
-    );
+
+  trocarCasa(value) {
+    this.house = value;
+    this.getOneHouse();
   }
+
+  getOneHouse() {
+    if (this.house != 'todas') {
+      this.ApiService.getOneHouse(this.house).subscribe(
+        (success) => {
+          console.log(success);
+          this.personagens = success;
+        },
+        (error) => { console.log(error) }
+      );
+    }
+    else {
+      this.ApiService.getAllPersonagens().subscribe(
+        (success) => {
+          console.log(success);
+          this.personagens = success;
+        },
+        (error) => { console.log(error) }
+      );
+    }
+  }
+
 
 }

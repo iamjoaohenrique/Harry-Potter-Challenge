@@ -10,4 +10,9 @@ export class ApiService {
   getAllPersonagens(){
     return this.http.get(`http://hp-api.herokuapp.com/api/characters/`);    
   }
+
+  getOneHouse(house){
+    return this.http.get(`http://hp-api.herokuapp.com/api/characters/house/${house}`);   
+  }
+
 }

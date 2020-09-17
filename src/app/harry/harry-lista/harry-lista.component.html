@@ -1,17 +1,24 @@
-<!--
-<ul *ngFor="let item of personagens">
-    <p><img [src]="item.image" alt=""></p>
-    <li>{{ item.name }}</li>
-    <li>{{ item.actor }}</li>
-</ul>
-
-
--->
 <div class="container">
+    <div class="row filtro">
+
+        <h2>Filtro:</h2>
+        <div>
+           <select class="form-control btn-warning" #house (change)="trocarCasa(house.value)">
+                <option value="todas">Selecione...</option>
+                <option value="Gryffindor">Grifinória</option>
+                <option value="Ravenclaw">Corvinal</option>
+                <option value="Hufflepuff">Lufa-Lufa</option>
+                <option value="Slytherin">Sonserina</option>
+            </select>
+        </div>
+
+    </div>
+
+
     <div class="card" *ngFor="let item of personagens">
         <div class="row">
             <div class="col-md-4">
-                <img [src]="item.image" class="card-img" alt="...">
+                <img [src]="item.image" class="card-img" alt="foto-personagem">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
