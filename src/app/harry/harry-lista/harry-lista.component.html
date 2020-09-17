@@ -3,7 +3,7 @@
 
         <h2>Filtro:</h2>
         <div>
-           <select class="form-control btn-warning" #house (change)="trocarCasa(house.value)">
+           <select class="form-control btn-dark" #house (change)="trocarCasa(house.value)">
                 <option value="todas">Selecione...</option>
                 <option value="Gryffindor">Grifinória</option>
                 <option value="Ravenclaw">Corvinal</option>
@@ -15,7 +15,7 @@
     </div>
 
 
-    <div class="card" *ngFor="let item of personagens">
+    <div  *ngFor="let item of personagens" [class]="item.house" class="card semcasa" >
         <div class="row">
             <div class="col-md-4">
                 <img [src]="item.image" class="card-img" alt="foto-personagem">

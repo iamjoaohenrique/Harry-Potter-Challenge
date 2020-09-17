@@ -4,13 +4,14 @@
     text-align: center;
     padding: 2%;
     margin: 2%;
-    border: 2px solid rgba(0,0,0,1);
+    border: 10px solid rgba(205,205,205,1);
     border-radius: 4rem;
 }
 .card h5 {
     font-family: harryfont;
     font-size: 6rem;
     font-style: normal;
+    
 }
 
 .card p{
@@ -20,7 +21,8 @@
 
 .card img{
     width: 50%;
-    border: 3px solid rgb(212, 174, 48);
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
 }
 .topo{
     background-color: black;
@@ -33,7 +35,7 @@
 }
 
 .dropdown-item.active, .dropdown-item:active{
-    background-color: yellow;
+    background-color: black;
     color: black;
 }
 
@@ -44,6 +46,23 @@
 .filtro h2{
     margin-right: 1.8rem;
 }
+
+.Slytherin{
+    background: rgba(38,161,71,0.9)!important;
+}
+.Ravenclaw{
+    background: rgba(0, 87, 130,0.9)!important;
+}
+.Hufflepuff{
+    background: rgba(255, 214, 60,0.9) !important;
+}
+.Gryffindor{
+    background: rgba(201,16,24,0.9) !important;
+}
+.semcasa{
+    background: rgba(0,0,0,0.1);
+}
+
 
 @font-face {
 	font-family: harryfont;
