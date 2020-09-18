@@ -1,3 +1,4 @@
+import { LocalStorageService } from './../../local-storage.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HarryDetalheComponent implements OnInit {
 
-  constructor() { }
+  constructor(private LocalStorageService: LocalStorageService) {
+    this.mostrardados();
+  }
+
+  teste : any = [];
 
   ngOnInit(): void {
   }
 
+  mostrardados() {
+      this.teste = this.LocalStorageService.get('1');
+      if(this.teste[1].name == 'Hermione Granger'){
+        console.log(this.teste);
+      }
+      
+    }
+
 }
+
+
+
+

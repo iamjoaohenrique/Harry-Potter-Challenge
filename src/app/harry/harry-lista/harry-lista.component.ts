@@ -1,3 +1,4 @@
+import { LocalStorageService } from './../../local-storage.service';
 import { ApiService } from '../../api.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -12,13 +13,14 @@ export class HarryListaComponent implements OnInit {
 
   house: string = 'todas';
 
-  constructor(private ApiService: ApiService) {
-    this.getOneHouse();
+  constructor(private ApiService: ApiService, private LocalStorageService:LocalStorageService) {
+    this.getOneHouse();  
   }
 
   ngOnInit(): void {
   }
 
+ 
 
   trocarCasa(value) {
     this.house = value;
@@ -40,11 +42,11 @@ export class HarryListaComponent implements OnInit {
         (success) => {
           console.log(success);
           this.personagens = success;
+          this.LocalStorageService.set('1',success);
         },
         (error) => { console.log(error) }
       );
     }
   }
-
 
 }
