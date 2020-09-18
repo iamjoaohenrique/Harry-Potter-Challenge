@@ -1,3 +1,5 @@
+import { HarryListaComponent } from './harry/harry-lista/harry-lista.component';
+import { HarryDetalheComponent } from './harry/harry-detalhe/harry-detalhe.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';

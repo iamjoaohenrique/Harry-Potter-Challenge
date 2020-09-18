@@ -1,6 +1,8 @@
-import { LocalStorageService } from './../../local-storage.service';
-import { ApiService } from '../../api.service';
+import { HarryDetalheComponent } from './../harry-detalhe/harry-detalhe.component';
+import { LocalStorageService } from './../../services/local-storage.service';
+import { ApiService } from './../../services/api.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-harry-lista',
@@ -13,8 +15,12 @@ export class HarryListaComponent implements OnInit {
 
   house: string = 'todas';
 
-  constructor(private ApiService: ApiService, private LocalStorageService:LocalStorageService) {
-    this.getOneHouse();  
+  constructor(
+    private ApiService: ApiService, 
+    private LocalStorageService:LocalStorageService,
+    private Router:Router ) {
+
+    this.getOneHouse(); 
   }
 
   ngOnInit(): void {
@@ -47,6 +53,11 @@ export class HarryListaComponent implements OnInit {
         (error) => { console.log(error) }
       );
     }
+  }
+
+  selecionar(item){
+    this.LocalStorageService.set('2',item);
+    this.Router.navigate(['detalhe']);
   }
 
 }

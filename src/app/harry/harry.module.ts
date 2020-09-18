@@ -1,4 +1,4 @@
-
+import { AppRoutingModule } from './../app-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HarryListaComponent } from './harry-lista/harry-lista.component';
@@ -13,7 +13,8 @@ import { HarryDetalheComponent } from './harry-detalhe/harry-detalhe.component';
     HarryDetalheComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ],
   exports: [
     HarryListaComponent,
