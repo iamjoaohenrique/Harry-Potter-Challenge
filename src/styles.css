@@ -2,12 +2,11 @@
 .card {
     max-height: 25%;
     text-align: center;
-    padding: 2%;
+    padding: 4%;
     margin: 2%;
     border: 10px solid rgba(205,205,205,1);
     border-radius: 4rem;
     justify-content: center;
-    padding-left: 1rem;
     cursor: pointer;
 
     
@@ -19,33 +18,33 @@
     justify-content: center;
     align-items: center;
     color:black;
+    padding: 2%;
 }
 
 .carddetalhe img {
     max-width: 100%!important;
-    height: 400!important;
-    width: 350px!important;
-    object-fit:contain!important;
-    
+    width: 16rem!important;    
 }
 .carddetalhe p{
-    font-size: 1.5rem!important;
+   
+    font-family: roboto!important;
    
 }
 
 
 .card h5 {
     font-family: harryfont;
-    font-size: 5rem;
+    font-size: 4rem;
     font-style: normal;
     align-items: center;
     justify-content: center;
-    
+    color: black;
 }
 
 .card p{
     font-family: roboto;
-    font-size: 2rem;
+    font-size: 1.3rem;
+    color: black;
 }
 
 .card img{
@@ -57,11 +56,18 @@
     background-color: black;
     padding: 2%;
     cursor: pointer;
-}
-.logo{
-    width: 15%;
-    height: 15%;
 
+}
+
+.topo svg{
+    margin-right: 10%;
+    color: white;
+}
+
+.logo{
+    margin-right: 10%;
+    width: 20%;
+    height: 20%;
 }
 
 .dropdown-item.active, .dropdown-item:active{

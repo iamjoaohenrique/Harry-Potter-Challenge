@@ -18,6 +18,6 @@ export class HarryDetalheComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  selecionado:any =[this.LocalStorageService.get('2')];
+  selecionado:any =[this.LocalStorageService.get('1')];
 
 }

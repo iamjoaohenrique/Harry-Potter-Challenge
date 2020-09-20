@@ -48,7 +48,6 @@ export class HarryListaComponent implements OnInit {
         (success) => {
           console.log(success);
           this.personagens = success;
-          this.LocalStorageService.set('1',success);
         },
         (error) => { console.log(error) }
       );
@@ -56,7 +55,7 @@ export class HarryListaComponent implements OnInit {
   }
 
   selecionar(item){
-    this.LocalStorageService.set('2',item);
+    this.LocalStorageService.set('1',item);
     this.Router.navigate(['detalhe']);
   }
 
