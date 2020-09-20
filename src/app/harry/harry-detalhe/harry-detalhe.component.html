@@ -1,17 +1,18 @@
-<div  *ngFor="let item of selecionado" [class]="item.house" class="card carddetalhe semcasa " >
-    <div class="row">
-        <div class="col-md-6">
-            <img [src]="item.image" class="card-img" alt="foto-personagem">
-        </div>
-        <div class="col-md-6">
-            <div class="card-body">
-                <h5 class="card-title">{{ item.name }}</h5>
-                <p class="card-text">Nome Ator: {{ item.actor }}</p>
-                <p class="card-text">Gênero: {{item.gender}}</p>
-                <p class="card-text">Casa: {{item.house}}</p>
-                <p class="card-text">Cor do Olho: {{item.eyeColour}}</p>
-                <p class="card-text">Cor do Cabelo: {{item.hairColour}}</p>
-               
+<div class="container-fluid">
+    <div *ngFor="let item of selecionado" [class]="item.house" class="card carddetalhe semcasa ">
+        <div class="row">
+            <div class="col-md-6">
+                <img [src]="item.image" class="card-img" alt="foto-personagem">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.name }}</h5>
+                    <p class="card-text">Nome Ator: {{ item.actor }}</p>
+                    <p class="card-text">Gênero: {{item.gender}}</p>
+                    <p class="card-text">Casa: {{item.house}}</p>
+                    <p class="card-text">Cor do Olho: {{item.eyeColour}}</p>
+                    <p class="card-text">Cor do Cabelo: {{item.hairColour}}</p>
+                </div>
             </div>
         </div>
     </div>
