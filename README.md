@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="https://imgur.com/FCSbE39.jpg" width="50%">
+    <img src="https://imgur.com/FCSbE39.jpg" width="40%">
 </h1>
 
 <h1>
@@ -17,7 +17,7 @@
 
 ## 🔖&nbsp; Sobre
 
-O projeto **Harry Potter Chanlenge** é uma aplicação que foi criado com o intuito de fazer para ser apresentado para uma entrevista de emprego que foi expcificada as informações por e-mail.
+O projeto **Harry Potter Chanlenge** é uma aplicação que foi criado com o intuito de desenvolver para ser apresentado para uma entrevista de emprego que foi especificada as informações por e-mail de como deveria ser criada a aplicação mostrada.
 
 ---
 
