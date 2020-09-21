@@ -3,7 +3,11 @@
 </h1>
 
 <h1>
+<<<<<<< HEAD
     <img src="src/assets/gif/hpc.gif">
+=======
+    <img src="https://i.imgur.com/x0NbNsS.gif">
+>>>>>>> aa33bdb115b0bfbca29e609cfdf74143f7a0e425
 </h1>
 <h3 align="center">
     <a href="#">Acessar a demonstração</a>
