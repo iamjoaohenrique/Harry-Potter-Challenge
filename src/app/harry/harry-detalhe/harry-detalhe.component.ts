@@ -1,6 +1,5 @@
 import { LocalStorageService } from './../../services/local-storage.service';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-harry-detalhe',
@@ -9,15 +8,9 @@ import { Router } from '@angular/router';
 })
 export class HarryDetalheComponent implements OnInit {
 
-  constructor(private LocalStorageService: LocalStorageService ) {
-   
-  }
+  constructor(private LocalStorageService: LocalStorageService) { }
+  ngOnInit(): void { }
 
-  
-
-  ngOnInit(): void {
-
-  }
-  selecionado:any =[this.LocalStorageService.get('1')];
+  selecionado: any = [this.LocalStorageService.get('1')];
 
 }

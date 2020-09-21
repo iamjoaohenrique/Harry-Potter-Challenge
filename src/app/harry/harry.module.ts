@@ -9,7 +9,7 @@ import { HarryDetalheComponent } from './harry-detalhe/harry-detalhe.component';
 
 @NgModule({
   declarations: [
-    HarryListaComponent, 
+    HarryListaComponent,
     HarryDetalheComponent
   ],
   imports: [

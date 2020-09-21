@@ -8,11 +8,11 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getAllPersonagens(){
-    return this.http.get(`http://hp-api.herokuapp.com/api/characters/`);    
+    return this.http.get(`http://hp-api.herokuapp.com/api/characters/`);
   }
 
   getOneHouse(house){
-    return this.http.get(`http://hp-api.herokuapp.com/api/characters/house/${house}`);   
+    return this.http.get(`http://hp-api.herokuapp.com/api/characters/house/${house}`);
   }
 
 }

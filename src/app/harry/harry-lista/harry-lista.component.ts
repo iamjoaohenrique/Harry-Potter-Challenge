@@ -13,20 +13,16 @@ export class HarryListaComponent implements OnInit {
 
   personagens: any = [];
 
-  house: string = 'todas';
+  house = 'todas';
 
   constructor(
-    private ApiService: ApiService, 
-    private LocalStorageService:LocalStorageService,
-    private Router:Router ) {
-
-    this.getOneHouse(); 
+    private ApiService: ApiService,
+    private LocalStorageService: LocalStorageService,
+    private Router: Router ) {
+    this.getOneHouse();
   }
 
-  ngOnInit(): void {
-  }
-
- 
+  ngOnInit(): void {}
 
   trocarCasa(value) {
     this.house = value;
@@ -37,7 +33,6 @@ export class HarryListaComponent implements OnInit {
     if (this.house != 'todas') {
       this.ApiService.getOneHouse(this.house).subscribe(
         (success) => {
-          console.log(success);
           this.personagens = success;
         },
         (error) => { console.log(error) }
@@ -46,7 +41,6 @@ export class HarryListaComponent implements OnInit {
     else {
       this.ApiService.getAllPersonagens().subscribe(
         (success) => {
-          console.log(success);
           this.personagens = success;
         },
         (error) => { console.log(error) }
