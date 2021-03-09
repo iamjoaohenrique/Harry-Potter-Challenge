@@ -17,7 +17,7 @@
 
 ## 🔖&nbsp; Sobre
 
-O projeto **Harry Potter Chanlenge** é uma aplicação que foi criado com o intuito de desenvolver para ser apresentado para uma entrevista de emprego que foi especificada as informações por e-mail de como deveria ser criada a aplicação mostrada.
+O projeto **Harry Potter Challenge** é uma aplicação que foi criado com o intuito de desenvolver para ser apresentado para uma entrevista de emprego que foi especificada as informações por e-mail de como deveria ser criada a aplicação mostrada.
 
 ---
 
