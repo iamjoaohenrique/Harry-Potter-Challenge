@@ -1,56 +1,56 @@
 {
-  "name": "Harry Potter WebAPP",
-  "short_name": "Harry Potter WebAPP",
-  "theme_color": "##000000",
-  "background_color": "#fafafa",
+  "name": "Harry Potter",
+  "short_name": "Harry Potter",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "display": "standalone",
   "scope": "./",
   "start_url": "/index.html",
   "icons": [
     {
-      "src": "assets/imagens/hplogo.png",
+      "src": "assets/icons/harry-potter-64.png",
       "sizes": "72x72",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/imagens/hplogo.png",
+      "src": "assets/icons/harry-potter-64.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/imagens/hplogo.png",
+      "src": "assets/icons/harry-potter-128.png",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/imagens/hplogo.png",
+      "src": "assets/icons/harry-potter-128.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/imagens/hplogo.png",
+      "src": "assets/icons/harry-potter-128.png",
       "sizes": "152x152",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/imagens/hplogo.png",
+      "src": "assets/icons/harry-potter-256.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/imagens/hplogo.png",
+      "src": "assets/icons/harry-potter-256.png",
       "sizes": "384x384",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/imagens/hplogo.png",
+      "src": "assets/icons/harry-potter-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
